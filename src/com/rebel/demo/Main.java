@@ -8,9 +8,9 @@ public class Main
 		System.out.println("this is lambda lessons");
 		System.out.println();
 		
-		AddTwoi a = () -> System.out.println("this is first time using Lamda");
+		AddTwoi ab = () -> System.out.println("this is first time using Lamda");
 			
-		a.hry();
+		ab.hry();
 		System.out.println();
 		
 		AddTwoi at = new AddTwoi() {
@@ -30,9 +30,17 @@ public class Main
 		
 		System.out.println();
 		
-		//again fetchgng through the lambda
+		//again fetching through the lambda with int param
 		
+		Second s = ((a , b) -> a+b);
+		
+		 System.out.println(s.add(4, 5));
 		 
+		//lambda with String param
+		 
+		  Third th = name -> name.length();
+		  
+		  System.out.println(th.len("Hiren Devmurari"));
 		
 
 	}
